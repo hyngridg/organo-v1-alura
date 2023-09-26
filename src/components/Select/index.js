@@ -9,6 +9,7 @@ const Select = (props) => {
                 required={props.required}
                 value={props.valor}
             >
+                <option value=""></option>
                 {props.itens.map(item => {
                     return <option key={item}>{item}</option>
                 })}
